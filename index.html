@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hami Mini-Market</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-inner">
+            <div class="logo" aria-label="Hami Mini-market logo">
+                <img src="assets/mini.png" alt="Hami Mini-market" class="logo-img">
+            </div>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav id="nav-menu" class="menu" role="navigation">
+                <ul>
+                    <li>
+                        <a href="#products">
+                            <svg class="menu-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.45c-.2.36-.25.79-.14 1.19.25.98 1.24 1.66 2.32 1.66h7v-2h-7l1.1-2h5.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49-1.75-1.02L18.42 9H9.21l-.94-2z"/></svg>
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <svg class="menu-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <svg class="menu-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12a2 2 0 0 0 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero-content">
+            <h4>Fresh . Local . Trusted</h4>
+            <h1>Welcome to Hami Mini-Market</h1>
+            <p>Your one-stop shop for all your daily needs!</p>
+            <div class="hero-cta">
+                <a href="#products" class="btn-primary">Shop Now</a>
+                <a href="#products" class="btn-secondary hero-ghost">View Products</a>
+            </div>
+
+            <div class="hero-badges" aria-hidden="true">
+                <span>Free pickup</span>
+                <span>Locally sourced</span>
+                <span>Open daily</span>
+            </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+            <!-- Inline SVG illustration (stylized grocery shapes) - responsive and lightweight -->
+            <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="hero-svg">
+                <defs>
+                    <linearGradient id="g1" x1="0" x2="1">
+                        <stop offset="0" stop-color="#fff" stop-opacity="0.9" />
+                        <stop offset="1" stop-color="#dff7e7" />
+                    </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="400" height="320" rx="18" fill="url(#g1)" opacity="0.6" />
+                <g transform="translate(36,22)">
+                    <circle cx="120" cy="80" r="58" fill="#0ea963" opacity="0.95" />
+                    <ellipse cx="220" cy="160" rx="74" ry="52" fill="#0b8f57" opacity="0.95" />
+                    <rect x="42" y="150" width="120" height="72" rx="16" fill="#ffffff" opacity="0.85" />
+                    <g fill="#fff" opacity="0.9">
+                        <circle cx="120" cy="80" r="18" />
+                        <rect x="72" y="172" width="16" height="8" rx="4" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+    </div>
+    <div id="products" class="products-list">
+        <h2>Our Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="assets/apple.jpg" alt="Fresh Apples">
+                <h3>Fresh Apples</h3>
+                <p>$2.99 / lb</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/banana.jpg" alt="Organic Bananas">
+                <h3>Organic Bananas</h3>
+                <p>$1.49 / lb</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/bread.jpg" alt="Whole Wheat Bread">
+                <h3>Whole Wheat Bread</h3>
+                <p>$3.49</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/eggs.jpg" alt="Free-Range Eggs">
+                <h3>Free-Range Eggs</h3>
+                <p>$4.99 / dozen</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+             <div class="product-card">
+                <img src="assets/apple.jpg" alt="Fresh Apples">
+                <h3>Fresh Apples</h3>
+                <p>$2.99 / lb</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/banana.jpg" alt="Organic Bananas">
+                <h3>Organic Bananas</h3>
+                <p>$1.49 / lb</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/bread.jpg" alt="Whole Wheat Bread">
+                <h3>Whole Wheat Bread</h3>
+                <p>$3.49</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/eggs.jpg" alt="Free-Range Eggs">
+                <h3>Free-Range Eggs</h3>
+                <p>$4.99 / dozen</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    
+    <section class="about" id="about">
+        <div class="content">
+            <h2>About Hami Mini-Market</h2>
+            <p>Hami Mini-Market is a family-run store focused on fresh, local produce and everyday essentials. We pride ourselves on quality, friendly service, and supporting local farmers.</p>
+            <p>Open daily — stop by for seasonal specials and pantry staples. We also offer small-batch, locally sourced products you won't find at big-box stores.</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content contact-grid">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Have a question or want to place a small order? Reach out — we're happy to help.</p>
+                <ul>
+                    <li><strong>Address:</strong> 123 Market St, YourTown</li>
+                    <li><strong>Phone:</strong> (555) 123-4567</li>
+                    <li><strong>Email:</strong> hello@hamimarket.example</li>
+                </ul>
+            </div>
+
+            <form class="contact-form" action="#" method="post" aria-label="Contact form">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button class="btn-primary" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="content footer-inner">
+            <div class="footer-left">&copy; <span id="year"></span> Hami Mini-Market — All rights reserved.</div>
+            <div class="footer-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // set year in footer
+        (function(){ const y = new Date().getFullYear(); const el = document.getElementById('year'); if(el) el.textContent = y; })();
+    </script>
+    <script src="index.js" defer></script>
+</body>
+</html>
