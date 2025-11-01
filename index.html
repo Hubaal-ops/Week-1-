@@ -13,6 +13,13 @@
                 <img src="assets/mini.png" alt="Hami Mini-market" class="logo-img">
             </div>
 
+            <div class="nav-actions">
+                <a href="#cart" class="cart-btn" aria-label="View cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.45A1.99 1.99 0 0 0 9 18h9v-2H9.42c.04-.12.09-.24.15-.36L11.9 13H18c.75 0 1.41-.41 1.75-1.03L23 5H6.21" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+
             <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -85,54 +92,74 @@
     </div>
     <div id="products" class="products-list">
         <h2>Our Products</h2>
+
+        <div class="products-controls">
+            <input id="search-input" type="search" placeholder="Search products by name..." aria-label="Search products">
+
+            <select id="category-filter" aria-label="Filter by category">
+                <option value="all">All categories</option>
+                <option value="Fruits">Fruits</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Bakery">Bakery</option>
+                <option value="Dairy">Dairy</option>
+            </select>
+
+            <select id="price-filter" aria-label="Filter by price">
+                <option value="all">All prices</option>
+                <option value="2">Under $2</option>
+                <option value="3">Under $3</option>
+                <option value="5">Under $5</option>
+            </select>
+        </div>
+
         <div class="products-grid">
-            <div class="product-card">
+            <div class="product-card" data-name="fresh apples" data-category="Fruits" data-price="2.99">
                 <img src="assets/apple.jpg" alt="Fresh Apples">
                 <h3>Fresh Apples</h3>
-                <p>$2.99 / lb</p>
-                <a href="#" class="btn-secondary">Add to Cart</a>
+                <p>$2.99</p>
+                <button class="btn-secondary add-to-cart" data-name="Fresh Apples" data-price="2.99">Add to Cart</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="organic bananas" data-category="Fruits" data-price="1.49">
                 <img src="assets/banana.jpg" alt="Organic Bananas">
                 <h3>Organic Bananas</h3>
-                <p>$1.49 / lb</p>
-                <a href="#" class="btn-secondary">Add to Cart</a>
+                <p>$1.49</p>
+                <button class="btn-secondary add-to-cart" data-name="Organic Bananas" data-price="1.49">Add to Cart</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="whole wheat bread" data-category="Bakery" data-price="3.49">
                 <img src="assets/bread.jpg" alt="Whole Wheat Bread">
                 <h3>Whole Wheat Bread</h3>
                 <p>$3.49</p>
-                <a href="#" class="btn-secondary">Add to Cart</a>
+                <button class="btn-secondary add-to-cart" data-name="Whole Wheat Bread" data-price="3.49">Add to Cart</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="free-range eggs" data-category="Dairy" data-price="4.99">
                 <img src="assets/eggs.jpg" alt="Free-Range Eggs">
                 <h3>Free-Range Eggs</h3>
-                <p>$4.99 / dozen</p>
-                <a href="#" class="btn-secondary">Add to Cart</a>
+                <p>$4.99</p>
+                <button class="btn-secondary add-to-cart" data-name="Free-Range Eggs" data-price="4.99">Add to Cart</button>
             </div>
-             <div class="product-card">
-                <img src="assets/apple.jpg" alt="Fresh Apples">
-                <h3>Fresh Apples</h3>
-                <p>$2.99 / lb</p>
-                <a href="#" class="btn-secondary">Add to Cart</a>
+            <div class="product-card" data-name="green lettuce" data-category="Vegetables" data-price="1.99">
+                <img src="assets/lettuce.jpg" alt="Green Lettuce">
+                <h3>Green Lettuce</h3>
+                <p>$1.99</p>
+                <button class="btn-secondary add-to-cart" data-name="Green Lettuce" data-price="1.99">Add to Cart</button>
             </div>
-            <div class="product-card">
-                <img src="assets/banana.jpg" alt="Organic Bananas">
-                <h3>Organic Bananas</h3>
-                <p>$1.49 / lb</p>
-                <a href="#" class="btn-secondary">Add to Cart</a>
+            <div class="product-card" data-name="carrots bunch" data-category="Vegetables" data-price="2.49">
+                <img src="assets/carrots.jpg" alt="Carrots Bunch">
+                <h3>Carrots Bunch</h3>
+                <p>$2.49</p>
+                <button class="btn-secondary add-to-cart" data-name="Carrots Bunch" data-price="2.49">Add to Cart</button>
             </div>
-            <div class="product-card">
-                <img src="assets/bread.jpg" alt="Whole Wheat Bread">
-                <h3>Whole Wheat Bread</h3>
-                <p>$3.49</p>
-                <a href="#" class="btn-secondary">Add to Cart</a>
+            <div class="product-card" data-name="banana muffins" data-category="Bakery" data-price="2.79">
+                <img src="assets/muffin.jpg" alt="Banana Muffins">
+                <h3>Banana Muffins</h3>
+                <p>$2.79</p>
+                <button class="btn-secondary add-to-cart" data-name="Banana Muffins" data-price="2.79">Add to Cart</button>
             </div>
-            <div class="product-card">
-                <img src="assets/eggs.jpg" alt="Free-Range Eggs">
-                <h3>Free-Range Eggs</h3>
-                <p>$4.99 / dozen</p>
-                <a href="#" class="btn-secondary">Add to Cart</a>
+            <div class="product-card" data-name="yogurt" data-category="Dairy" data-price="1.89">
+                <img src="assets/yogurt.jpg" alt="Yogurt">
+                <h3>Yogurt</h3>
+                <p>$1.89</p>
+                <button class="btn-secondary add-to-cart" data-name="Yogurt" data-price="1.89">Add to Cart</button>
             </div>
         </div>
     </div>

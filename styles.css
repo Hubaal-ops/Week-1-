@@ -36,6 +36,12 @@ body { background: #f6f7fb; color: #1f2937; }
 .nav-toggle:focus { outline: 2px solid rgba(255,255,255,0.22); border-radius: 8px; }
 .nav-toggle .bar { display: block; width: 22px; height: 2px; background: white; margin: 4px 0; }
 
+/* Cart button in navbar */
+.nav-actions { display: flex; align-items: center; gap: 12px; }
+.cart-btn { color: white; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; position: relative; }
+.cart-btn svg { color: rgba(255,255,255,0.95); }
+.cart-count { background: #fff; color: var(--brand-dark); font-weight: 800; padding: 2px 7px; border-radius: 999px; font-size: 0.78rem; position: absolute; top: -6px; right: -6px; box-shadow: 0 6px 14px rgba(5,34,24,0.12); }
+
 /* Responsive rules */
 @media (max-width: 720px) {
 	.navbar-inner { padding: 10px 16px; }
@@ -247,6 +253,16 @@ a:focus { outline: 3px solid rgba(99,102,241,0.22); outline-offset: 2px; }
 .products-list { max-width: var(--max-width); margin: 28px auto; padding: 0 20px 60px; }
 .products-list h2 { font-size: 1.6rem; margin-bottom: 18px; color: var(--brand-dark); }
 
+/* Controls for search and filters */
+.products-controls { display: flex; gap: 12px; align-items: center; margin-bottom: 18px; }
+.products-controls input[type="search"] { flex: 1 1 320px; padding: 10px 12px; border-radius: 10px; border: 1px solid #e6efe8; font-size: 0.98rem; }
+.products-controls select { padding: 10px 12px; border-radius: 10px; border: 1px solid #e6efe8; background: #fff; font-weight: 700; color: var(--brand-dark); }
+
+@media (max-width: 720px) {
+	.products-controls { flex-direction: column; align-items: stretch; }
+	.products-controls select, .products-controls input[type="search"] { width: 100%; }
+}
+
 .products-grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 
 .product-card { background: #fff; border-radius: 12px; padding: 12px; box-shadow: 0 6px 18px rgba(5,34,24,0.06); display: flex; flex-direction: column; align-items: stretch; transition: transform .14s ease, box-shadow .14s ease; }
@@ -258,6 +274,10 @@ a:focus { outline: 3px solid rgba(99,102,241,0.22); outline-offset: 2px; }
 
 .btn-secondary { display: inline-block; background: #fff; color: var(--brand-dark); border: 2px solid rgba(11,107,69,0.08); padding: 10px 12px; border-radius: 10px; text-decoration: none; font-weight: 700; text-align: center; }
 .btn-secondary:hover { background: #f7fff7; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(11,107,69,0.04); }
+
+/* Add-to-cart buttons use same look but are regular buttons */
+.product-card .add-to-cart { background: #fff; border: 2px solid rgba(11,107,69,0.08); color: var(--brand-dark); cursor: pointer; }
+.product-card .add-to-cart:active { transform: translateY(-1px); }
 
 /* Small screens: stack spacing */
 @media (max-width: 560px) {
